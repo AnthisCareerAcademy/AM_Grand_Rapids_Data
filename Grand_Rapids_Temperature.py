@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 # Reading from the Grand Rapids file.
-path = Path('eq_data/a - Copy (2).csv')
+path = Path('a - Copy (2).csv')
 lines = path.read_text().splitlines()
 
 reader = csv.reader(lines)
