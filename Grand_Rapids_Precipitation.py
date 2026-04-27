@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-path = Path('10 Years/a - Copy (2).csv')
+path = Path('10 Years/a - Copy.csv')
 lines = path.read_text().splitlines()
 reader = csv.reader(lines)
 header_row = next(reader)
@@ -13,8 +13,8 @@ header_row = next(reader)
 
 dates, prcp = [], []
 for row in reader:
-    current_date = datetime.strptime(row[1], '%Y-%m-%d')
-    prcps = float(row[10])
+    current_date = datetime.strptime(row[0], '%Y-%m-%d')
+    prcps = float(row[4])
     dates.append(current_date)
     prcp.append(prcps)
 
