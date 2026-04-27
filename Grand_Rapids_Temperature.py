@@ -36,5 +36,6 @@ ax.set_title('Daily Average Temperature (Aug 13–18, 10 Years)', fontsize=24)
 ax.set_xlabel('Date', fontsize=16)
 ax.set_ylabel('Avg Temperature (F)', fontsize=16)
 ax.tick_params(labelsize=16)
+fig.autofmt_xdate()
 
 plt.show()
