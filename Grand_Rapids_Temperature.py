@@ -14,9 +14,9 @@ dates, temps = [], []
 
 for row in reader:
     try:
-        current_date = datetime.strptime(row[1], '%Y-%m-%d')
-        high = float(row[2])
-        low = float(row[3])
+        current_date = datetime.strptime(row[0], '%Y-%m-%d')
+        high = float(row[1])
+        low = float(row[2])
         current_temp = (high + low) / 2
 
     except (ValueError, IndexError):
